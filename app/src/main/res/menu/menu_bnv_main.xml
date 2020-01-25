@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_home"
+        android:id="@+id/bnvHome"
+        android:title="خانه" />
+
+    <item
+        android:icon="@drawable/ic_category"
+        android:id="@+id/bnvCategory"
+        android:title="دسته بندی" />
+
+    <item
+        android:icon="@drawable/ic_shopping_cart"
+        android:id="@+id/bnvCart"
+        android:title="سبد خرید" />
+
+    <item
+        android:icon="@drawable/ic_person"
+        android:id="@+id/bnvProfile"
+        android:title="پروفایل" />
+
+
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@color/light"
+        app:cardCornerRadius="@dimen/radiusVS">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgItemCategory"
+                android:padding="8dp"
+                android:layout_width="@dimen/imgS"
+                android:layout_height="@dimen/imgS"
+                app:srcCompat="@drawable/logo"
+                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtItemCategory"
+                android:layout_toEndOf="@id/imgItemCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:text="Test Test Test Test Test TEst ttT" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
