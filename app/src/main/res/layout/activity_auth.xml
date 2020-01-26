@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RLAuth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:id="@+id/imgAuthHead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/profile_header" />
+
+    <TextView
+        android:id="@+id/txtLBLAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_42sdp"
+        android:text="@string/app_name"
+        android:textColor="@color/onPrimaryTextColor"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVAuth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/CVImgAuth"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/light"
+        app:cardCornerRadius="@dimen/radius"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVImgAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLBLAuth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@color/backGround"
+        app:cardCornerRadius="@dimen/radius">
+
+        <ImageView
+            android:id="@+id/imgAuth"
+            android:layout_width="@dimen/img"
+            android:layout_height="@dimen/img"
+            android:background="@color/backGround"
+            app:srcCompat="@drawable/ic_person"
+            android:elevation="12dp"
+            app:elevation="12dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <FrameLayout
+        android:id="@+id/ContentAuth"
+        android:layout_below="@id/CVImgAuth"
+        android:layout_alignBottom="@id/CVAuth"
+        android:layout_alignStart="@id/CVAuth"
+        android:layout_alignEnd="@id/CVAuth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="7dp"
+        app:elevation="7dp"
+        />
+
+</RelativeLayout>

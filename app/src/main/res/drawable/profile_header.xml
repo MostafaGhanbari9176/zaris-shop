@@ -1,0 +1,77 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="9dp"
+            android:height="16dp"
+            android:viewportWidth="9.0"
+            android:viewportHeight="16.0">
+            <path
+                android:name="a"
+                android:pathData="M0,0 v5 C 2,6.5 7,6.5 9,5 V0 z"
+                android:fillColor="@color/primaryColor"
+                />
+            <path
+                android:name="a"
+                android:pathData="M0,0 v5 C 2,6.5 7,6.5 9,5 V0 z">
+                <aapt:attr name="android:fillColor">
+                    <gradient
+                        android:centerColor="@color/primaryColor"
+                        android:endColor="@color/primaryLightColor"
+                        android:endX="9"
+                        android:endY="16"
+                        android:startColor="@color/primaryDarkColor"
+                        android:startX="0"
+                        android:startY="0"
+                        android:type="linear"
+
+                        />
+                </aapt:attr>
+            </path>
+            <path
+                android:name="b"
+                android:fillAlpha="0"
+                android:pathData="M0,0 v5 C 2,6.5 7,6.5 9,5 V0 z">
+                <aapt:attr name="android:fillColor">
+                    <gradient
+                        android:centerColor="@color/primaryColor"
+                        android:endColor="@color/primaryDarkColor"
+                        android:endX="9"
+                        android:endY="16"
+                        android:startColor="@color/primaryLightColor"
+                        android:startX="0"
+                        android:startY="-8"
+                        android:type="linear"
+
+                        />
+                </aapt:attr>
+            </path>
+
+        </vector>
+    </aapt:attr>
+    <target android:name="a">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="20000"
+                android:propertyName="fillAlpha"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"
+                android:valueFrom="1"
+                android:valueTo="0"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+    <target android:name="b">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="20000"
+                android:propertyName="fillAlpha"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+</animated-vector>
+

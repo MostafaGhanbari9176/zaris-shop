@@ -37,7 +37,7 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
             get() {
                 if (field == null) {
                     field = Volley.newRequestQueue(App.ctx)
-                    //(field as RequestQueue).cache.clear()
+                    (field as RequestQueue).cache.clear()
                     return field
                 }
                 return field
@@ -93,7 +93,7 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
     }
 
     fun getJsonArray(url: String, userToken: String, tag: String = "main") {
-        val request = object : JsonArrayRequest(Request.Method.GET, App.baseUrl + url, null,
+        val request = object : JsonArrayRequest(Request.Method.GET, if(url.contains("http", true)) url else App.baseUrl + url, null,
             { response ->
                 listener?.jsonArrayResponse(response)
             },

@@ -13,7 +13,7 @@ class CategoryPresenter(private val listener: CategoryResult, private val cancel
         fun result(ok: Boolean, message: String, data: ArrayList<CategoryModel>? = null) {}
     }
 
-    fun getCategorys() {
+    fun getCategorys() {/*
         val resultData = ArrayList<CategoryModel>()
         resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
         resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
@@ -33,8 +33,8 @@ class CategoryPresenter(private val listener: CategoryResult, private val cancel
         resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
         resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
         resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        listener.result(true, "", resultData)
-/*        ApiClient(object : ApiClient.ServerData {
+        listener.result(true, "", resultData)*/
+        ApiClient(object : ApiClient.ServerData {
             override fun jsonArrayResponse(data: JSONArray?) {
                 val resultData = ArrayList<CategoryModel>()
                 for (i in 0 until (data?.length() ?: 0)) {
@@ -53,7 +53,7 @@ class CategoryPresenter(private val listener: CategoryResult, private val cancel
             override fun errorInf(statusCode: String, message: String) {
                 listener.result(false, "Error")
             }
-        }).getJsonArray("", Hawk.get(Pref.authenticationToken, "products/categories"), cancelTag)*/
+        }, false).getJsonArray("https://api.myjson.com/bins/b7r5e", Hawk.get(Pref.authenticationToken, "products/categories"), cancelTag)
     }
 
 }

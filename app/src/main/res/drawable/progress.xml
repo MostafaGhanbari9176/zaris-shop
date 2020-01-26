@@ -1,55 +1,51 @@
-<animated-vector
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:aapt="http://schemas.android.com/aapt"
-        xmlns:tools="http://schemas.android.com/tools"
-        tools:ignore="NewApi"
->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="NewApi">
     <aapt:attr name="android:drawable">
         <vector
-                android:width="24dp"
-                android:height="24dp"
-                android:viewportWidth="24"
-                android:viewportHeight="24">
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
             <path
-                    android:name="p"
-                    android:strokeWidth="5.5"
-                    android:strokeColor="#fff"
-                    android:strokeLineCap="round"
-                    android:pathData="M12,12 h0.01"
-            />
+                android:name="p"
+                android:pathData="M12,12 h0.01"
+                android:strokeWidth="5.5"
+                android:strokeColor="@color/primaryColor"
+                android:strokeLineCap="round" />
             <path
-                    android:name="c"
-                    android:strokeWidth="3.5"
-                    android:strokeColor="#000"
-                    android:strokeLineCap="round"
-                    android:pathData="M12,12 h0.01"
-            />
+                android:name="c"
+                android:pathData="M12,12 h0.01"
+                android:strokeWidth="3.5"
+                android:strokeColor="@color/primaryLightColor"
+                android:strokeLineCap="round" />
         </vector>
     </aapt:attr>
     <target android:name="p">
         <aapt:attr name="android:animation">
             <objectAnimator
-                    android:duration="200"
-                    android:propertyName="strokeWidth"
-                    android:valueFrom="1"
-                    android:valueTo="5.5"
-                    android:valueType="floatType"
-                    android:repeatCount="infinite"
-                    android:repeatMode="reverse"
-            />
+                android:duration="600"
+                android:interpolator="@android:anim/decelerate_interpolator"
+                android:propertyName="strokeWidth"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"
+                android:valueFrom="0"
+                android:valueTo="6"
+                android:valueType="floatType" />
         </aapt:attr>
     </target>
     <target android:name="c">
         <aapt:attr name="android:animation">
             <objectAnimator
-                    android:duration="200"
-                    android:propertyName="strokeWidth"
-                    android:valueFrom="1"
-                    android:valueTo="3.5"
-                    android:valueType="floatType"
-                    android:repeatCount="infinite"
-                    android:repeatMode="reverse"
-            />
+                android:duration="300"
+                android:interpolator="@android:anim/accelerate_interpolator"
+                android:propertyName="strokeWidth"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"
+                android:valueFrom="0"
+                android:valueTo="3"
+                android:valueType="floatType" />
         </aapt:attr>
     </target>
 </animated-vector>

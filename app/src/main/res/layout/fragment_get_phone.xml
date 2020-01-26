@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:layoutDirection="rtl">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="شماره همراه"
+        android:textColorHint="@color/primaryLightColor"
+        app:boxStrokeColor="@color/primaryDarkColor"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        android:layout_marginTop="16dp"
+        app:counterTextColor="@color/primaryColor"
+        app:helperText="شماره همراه خودرا وارد کنید"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/primaryColor"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/primaryColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtGetPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/txt" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNextGetPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/primaryColor"
+        app:icon="@drawable/ic_next"
+        app:iconTint="@color/secondaryLightColor"
+        android:padding="8dp"
+        android:text="ادامه"
+        android:textColor="@color/light"
+        android:textSize="@dimen/txt" />
+</LinearLayout>
+

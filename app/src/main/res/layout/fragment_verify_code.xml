@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILVerifyCode"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="کد تایید"
+        android:textColorHint="@color/primaryLightColor"
+        app:boxStrokeColor="@color/primaryDarkColor"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+        app:counterTextColor="@color/primaryColor"
+        app:helperText="کد تایید به شماره همراه شما پیامک شده است"
+        app:helperTextTextColor="@color/primaryColor"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/primaryColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtVerifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/txt" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_below="@id/TILVerifyCode"
+        android:id="@+id/btnVerifyCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/primaryColor"
+        android:padding="8dp"
+        android:text="بررسی"
+        android:textColor="@color/light"
+        android:textSize="@dimen/txt"
+        app:icon="@drawable/ic_check"
+        app:iconTint="@color/secondaryLightColor" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnRequestVerifyCode"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="60 ثانیه تا درخواست مجدد کد تایید"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/txt" />
+</RelativeLayout>

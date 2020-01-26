@@ -4,6 +4,7 @@
     <dimen name="txtS">@dimen/_12ssp</dimen>
     <dimen name="txtB">@dimen/_16ssp</dimen>
     <dimen name="imgS">@dimen/_44sdp</dimen>
+    <dimen name="img">@dimen/_90sdp</dimen>
     <dimen name="radius">16dp</dimen>
     <dimen name="radiusVS">4dp</dimen>
 </resources>
