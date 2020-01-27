@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/profile_header" />
+        app:srcCompat="@drawable/auth_header" />
 
     <TextView
         android:id="@+id/txtLBLAuth"

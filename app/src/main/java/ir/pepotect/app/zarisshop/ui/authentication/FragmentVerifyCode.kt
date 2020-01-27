@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import ir.pepotect.app.zarisshop.R
 import ir.pepotect.app.zarisshop.model.ApiClient
+import ir.pepotect.app.zarisshop.presenter.AuthPresenter
 import ir.pepotect.app.zarisshop.reciever.SmsReceiver
 import ir.pepotect.app.zarisshop.ui.App
 import ir.pepotect.app.zarisshop.ui.uses.MyFragment
@@ -72,7 +73,13 @@ class FragmentVerifyCode : MyFragment() {
 
     private fun requestVCode() {
         startTimer()
-
+        progress.show()
+        AuthPresenter(object : AuthPresenter.Result {
+            override fun result(ok: Boolean, message: String) {
+                progress.cancel()
+                toast(message)
+            }
+        }, "account").requestVerifyCode()
     }
 
     private fun validateData() {
@@ -89,10 +96,20 @@ class FragmentVerifyCode : MyFragment() {
     }
 
     private fun checkCode(code: String) {
-        (ctx as ActivityAuth).apply {
-            setResult(Activity.RESULT_OK)
-            finish()
-        }
+        progress.show()
+        AuthPresenter(object : AuthPresenter.Result {
+            override fun result(ok: Boolean, message: String) {
+                progress.cancel()
+                if (ok) {
+                    (ctx as ActivityAuth).apply {
+                        setResult(Activity.RESULT_OK)
+                        finish()
+                    }
+                } else
+                    toast(message)
+            }
+        }, "account").checkVerifyCode(code.trim())
+
     }
 
     override fun onPause() {

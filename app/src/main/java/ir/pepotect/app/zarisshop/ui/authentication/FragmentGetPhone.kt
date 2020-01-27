@@ -16,6 +16,7 @@ import com.orhanobut.hawk.Hawk
 import ir.pepotect.app.zarisshop.R
 import ir.pepotect.app.zarisshop.model.ApiClient
 import ir.pepotect.app.zarisshop.model.localData.Pref
+import ir.pepotect.app.zarisshop.presenter.AuthPresenter
 import ir.pepotect.app.zarisshop.ui.App
 import ir.pepotect.app.zarisshop.ui.uses.MyFragment
 import ir.pepotect.app.zarisshop.ui.uses.dialog.DialogProgress
@@ -85,7 +86,16 @@ class FragmentGetPhone : MyFragment() {
 
     private fun sendToServer() {
         val phone = txtGetPhone.text.toString().trim()
-        (ctx as ActivityAuth).changeView(FragmentVerifyCode())
+        progress.show()
+        AuthPresenter(object : AuthPresenter.Result {
+            override fun result(ok: Boolean, message: String) {
+                progress.cancel()
+                if (ok)
+                    (ctx as ActivityAuth).changeView(FragmentVerifyCode())
+                else
+                    toast(message)
+            }
+        }, "account").register(phone)
 
     }
 

@@ -23,7 +23,7 @@ class ActivityAuth:MyActivity(R.id.ContentAuth) {
     }
 
     private fun init(){
-        startHeadAnimation()
+        animateHead()
         listenLayoutDrawed()
         changeView(FragmentGetPhone())
     }
@@ -68,7 +68,7 @@ class ActivityAuth:MyActivity(R.id.ContentAuth) {
         }
     }
 
-    private fun startHeadAnimation() {
+    private fun animateHead() {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
             (imgAuthHead.drawable as AnimatedVectorDrawable).start()
         } else

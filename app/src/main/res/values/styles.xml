@@ -11,6 +11,7 @@
         <item name="android:textColorSecondary">@color/onSecondaryTextColor</item>
         <item name="android:textColor">@color/txtGray</item>
         <item name="android:textSize">@dimen/txt</item>
+        <item name="android:fontFamily">@font/homa</item>
     </style>
 
 </resources>
