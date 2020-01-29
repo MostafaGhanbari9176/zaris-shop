@@ -5,11 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ir.pepotect.app.zarisshop.R
-import ir.pepotect.app.zarisshop.model.dataModel.AddressModel
+import ir.pepotect.app.zarisshop.model.dataModel.Address
 import ir.pepotect.app.zarisshop.ui.App
 import kotlinx.android.synthetic.main.item_address.view.*
 
-class AdapterAddress(private val data:ArrayList<AddressModel>):RecyclerView.Adapter<AdapterAddress.MyHolder>() {
+class AdapterAddress(private val data:ArrayList<Address>):RecyclerView.Adapter<AdapterAddress.MyHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder =
         MyHolder(LayoutInflater.from(App.ctx).
             inflate(R.layout.item_address, parent, false))

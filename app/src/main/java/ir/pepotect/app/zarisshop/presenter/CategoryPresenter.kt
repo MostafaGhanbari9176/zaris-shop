@@ -53,7 +53,7 @@ class CategoryPresenter(private val listener: CategoryResult, private val cancel
             override fun errorInf(statusCode: String, message: String) {
                 listener.result(false, "Error")
             }
-        }, false).getJsonArray("https://api.myjson.com/bins/b7r5e", Hawk.get(Pref.authenticationToken, "products/categories"), cancelTag)
+        }, false).getJsonArray("https://api.myjson.com/bins/b7r5e", true, cancelTag)
     }
 
 }

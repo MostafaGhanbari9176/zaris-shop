@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layoutDirection="rtl">
 
     <TextView
@@ -13,6 +14,17 @@
         android:paddingEnd="8dp"
         android:paddingBottom="4dp"
         android:text="home" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteItemAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_delete"
+        android:tint="#F44336"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/txtSubItemAddress"
+        android:layout_alignTop="@id/txtSubItemAddress"
+        />
 
     <TextView
         android:id="@+id/txtItemAddress"

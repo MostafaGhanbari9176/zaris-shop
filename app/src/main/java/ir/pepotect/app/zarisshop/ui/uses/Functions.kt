@@ -9,7 +9,7 @@ import ir.pepotect.app.zarisshop.ui.App
 
 fun loadImage(url: String, img: ImageView, ctx: Context = App.ctx) {
     Glide.with(ctx)
-        .load(url)
+        .load("http://pepotec.ir/wordpress/wp-content/uploads/2020/01/kharbar-150x150.png")
         .centerCrop()
         .diskCacheStrategy(DiskCacheStrategy.NONE)
         .skipMemoryCache(true)

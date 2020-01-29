@@ -22,16 +22,19 @@
                 android:padding="8dp"
                 android:layout_width="@dimen/imgS"
                 android:layout_height="@dimen/imgS"
+                android:layout_alignParentEnd="true"
                 app:srcCompat="@drawable/logo"
                  />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txtItemCategory"
-                android:layout_toEndOf="@id/imgItemCategory"
+                android:layout_alignParentStart="true"
                 android:layout_width="wrap_content"
+                android:layout_toStartOf="@id/imgItemCategory"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
-                android:gravity="center"
+                android:gravity="center_vertical"
+                android:textAlignment="viewStart"
                 android:maxLines="1"
                 android:padding="16dp"
                 android:text="Test Test Test Test Test TEst ttT" />

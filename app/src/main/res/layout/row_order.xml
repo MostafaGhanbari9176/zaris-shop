@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/table_row"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_column"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rowOrderProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/rowOrderImg"
+            android:layout_width="@dimen/imgS"
+            android:layout_height="@dimen/imgS"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/ic_category" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rowOrderProductNum"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/table_column"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/rowOrderProductCost"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/table_column"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/rowOrderTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/table_column"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRowOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="نمایش محصول"
+        android:textColor="@color/onSecondaryTextColor"
+        app:backgroundTint="@color/secondaryLightColor" />
+</TableRow>

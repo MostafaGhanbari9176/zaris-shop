@@ -92,7 +92,7 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
         queue?.add<JSONObject>(request)
     }
 
-    fun getJsonArray(url: String, userToken: String, tag: String = "main") {
+    fun getJsonArray(url: String, authentication: Boolean, tag: String = "main") {
         val request = object : JsonArrayRequest(Request.Method.GET, if(url.contains("http", true)) url else App.baseUrl + url, null,
             { response ->
                 listener?.jsonArrayResponse(response)
@@ -109,7 +109,8 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
             override fun getHeaders(): MutableMap<String, String> =
                 mutableMapOf<String, String>().apply {
                     put("Content-Type", "application/json")
-                    put("Authorization", "token $userToken")
+                    if (authentication)
+                        put("Authorization", "token " + Hawk.get(Pref.authenticationToken, ""))
                 }
 
             override fun getBodyContentType(): String = "application/json; charset=utf-8"

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/table_row"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/rowOrderHistoryOId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_column"
+        android:gravity="center"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/rowOrderHistoryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_column"
+        android:gravity="center"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/rowOrderHistoryCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_column"
+        android:gravity="center"
+        android:padding="8dp"
+         />
+
+    <TextView
+        android:id="@+id/rowOrderHistoryState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_column"
+        android:gravity="center"
+        android:padding="8dp"
+        />
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/btnRowOrderHistory"
+    android:layout_width="wrap_content"
+    app:backgroundTint="@color/secondaryLightColor"
+    android:textColor="@color/onSecondaryTextColor"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:text="نمایش"
+    />
+</TableRow>
