@@ -13,13 +13,11 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.orhanobut.hawk.Hawk
 import ir.pepotect.app.zarisshop.R
-import ir.pepotect.app.zarisshop.model.localData.Pref
 import ir.pepotect.app.zarisshop.ui.App
 import ir.pepotect.app.zarisshop.ui.activityMain.fragmentCategory.FragmentCategory
+import ir.pepotect.app.zarisshop.ui.activityMain.fragmentHome.FragmentHome
 import ir.pepotect.app.zarisshop.ui.activityMain.fragmentProfile.FragmentProfile
-import ir.pepotect.app.zarisshop.ui.authentication.ActivityAuth
 import kotlinx.android.synthetic.main.activity_main.*
 
 class ActivityMain : AppCompatActivity() {

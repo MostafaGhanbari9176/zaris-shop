@@ -9,6 +9,7 @@ import ir.pepotect.app.zarisshop.R
 import ir.pepotect.app.zarisshop.ui.activityMain.fragmentProfile.fragmentAddressList.FragmentAddressList
 import ir.pepotect.app.zarisshop.ui.activityOrder.ActivityOrder
 import ir.pepotect.app.zarisshop.ui.uses.MyFragment
+import ir.pepotect.app.zarisshop.ui.uses.changeValuePresenter
 import kotlinx.android.synthetic.main.fargment_address_list.*
 import kotlinx.android.synthetic.main.fragment_accessibility.*
 
@@ -28,6 +29,7 @@ class FragmentAccessibility : MyFragment() {
     }
 
     private fun init() {
+        getCache()
         btnUserInfo.setOnClickListener {
             parent.changeView(FragmentUserInfo().apply {
                 this.parent = this@FragmentAccessibility.parent
@@ -41,6 +43,12 @@ class FragmentAccessibility : MyFragment() {
         btnOrderHistory.setOnClickListener {
             startActivity(Intent(ctx, ActivityOrder::class.java))
         }
+    }
+
+    private fun getCache() {
+        pbCacheProfile.visibility = View.GONE
+        txtCacheNumber.text = "25000"
+        txtCache.text = changeValuePresenter("25000")
     }
 
 }

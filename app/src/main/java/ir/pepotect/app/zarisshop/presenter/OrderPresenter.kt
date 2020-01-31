@@ -5,7 +5,7 @@ import ir.pepotect.app.zarisshop.model.dataModel.Order
 import ir.pepotect.app.zarisshop.model.dataModel.OrderProduct
 import org.json.JSONArray
 
-class CartPresenter(private val listener: Result, private val cancelTag: String) {
+class OrderPresenter(private val listener: Result, private val cancelTag: String) {
 
     interface Result {
         fun orderHistory(ok: Boolean, message: String, data: ArrayList<Order>?) {}

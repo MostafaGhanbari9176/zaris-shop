@@ -17,12 +17,3 @@ data class Order(
     val state:String,
     val stateId:Int
 )
-
-data class Product(
-    val name:String,
-    val id:String,
-    val img:String,
-    val cost:String,
-    val catId:String,
-    val catName:String
-)

@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import ir.pepotect.app.zarisshop.R
 import ir.pepotect.app.zarisshop.model.dataModel.Order
-import ir.pepotect.app.zarisshop.presenter.CartPresenter
+import ir.pepotect.app.zarisshop.presenter.OrderPresenter
 import ir.pepotect.app.zarisshop.ui.App
 import ir.pepotect.app.zarisshop.ui.uses.MyFragment
 import ir.pepotect.app.zarisshop.ui.uses.dialog.DialogProgress
@@ -35,7 +35,7 @@ class FragmentOrderHistory : MyFragment() {
 
     private fun getOrderHistory() {
         progress.show()
-        CartPresenter(object : CartPresenter.Result {
+        OrderPresenter(object : OrderPresenter.Result {
             override fun orderHistory(
                 ok: Boolean,
                 message: String,

@@ -13,27 +13,7 @@ class CategoryPresenter(private val listener: CategoryResult, private val cancel
         fun result(ok: Boolean, message: String, data: ArrayList<CategoryModel>? = null) {}
     }
 
-    fun getCategorys() {/*
-        val resultData = ArrayList<CategoryModel>()
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        resultData.add(CategoryModel(0,"<color name=\"secondaryTextColor\">#000000</color>",0,"",""))
-        listener.result(true, "", resultData)*/
+    fun getCategorys() {
         ApiClient(object : ApiClient.ServerData {
             override fun jsonArrayResponse(data: JSONArray?) {
                 val resultData = ArrayList<CategoryModel>()
@@ -54,6 +34,7 @@ class CategoryPresenter(private val listener: CategoryResult, private val cancel
                 listener.result(false, "Error")
             }
         }, false).getJsonArray("https://api.myjson.com/bins/b7r5e", true, cancelTag)
+        //}, false).getJsonArray("products/categories?", true, cancelTag)
     }
 
 }

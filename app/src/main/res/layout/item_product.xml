@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/light"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/txtRebateItemProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rebate_back"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="20%"
+        android:textColor="@color/onPrimaryTextColor"
+        android:textSize="@dimen/txtVS"
+        android:elevation="7dp"
+        app:elevation="7dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgItemProduct"
+            android:background="@drawable/logo"
+            android:layout_width="@dimen/imgB"
+            android:layout_height="@dimen/imgB" />
+
+        <TextView
+            android:id="@+id/txtSubItemProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/txtPriceItemProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,482 @@
+[
+  {"url": "https://api.myjson.com/bins/hw082"},
+  {
+    "type": "pl",
+    "sub": "بیشترین تخفیف",
+    "data": [
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      }
+    ]
+  },
+  {
+    "type": "pl",
+    "sub": "پرفروش ها",
+    "data": [
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      }
+    ]
+  },
+  {
+    "type": "tlh",
+    "data": [
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1000018501.jpg",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1000018501.jpg",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1000018501.jpg",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1000018501.jpg",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1000018501.jpg",
+        "tag": "tag"
+      }
+    ]
+  },
+  {
+    "type": "tt",
+    "columns": 3,
+    "sub": "برند های برتر",
+    "data": [
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "sub": "تست",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "sub": "تست",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "sub": "تست",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "sub": "تست",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "sub": "تست",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "sub": "تست",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "sub": "تست",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "sub": "تست",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "sub": "تست",
+        "tag": "tag"
+      }
+    ]
+  },
+  {
+    "type": "tlv",
+    "data":[
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1000018426.jpg",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1000018426.jpg",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1000018426.jpg",
+        "tag": "tag"
+      },
+      {
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1000018426.jpg",
+        "tag": "tag"
+      }
+    ]
+  },
+  {
+    "type": "tpl",
+    "sub": "تخفیف های امسال",
+    "endTime": "2020-02-02",
+    "data": [
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      }
+    ]
+  },
+  {
+    "type": "pl",
+    "sub": "حبوبات",
+    "data": [
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      }
+    ]
+  },
+  {
+    "type": "pl",
+    "sub": "بهداشتی",
+    "data": [
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      },
+      {
+        "name": "محصول یک",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115306464.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "1200",
+        "rebate": "50"
+      },
+      {
+        "name": "محصول دو",
+        "id": 1,
+        "imgSrc": "https://dkstatics-public.digikala.com/digikala-products/115196704.jpg?x-oss-process=image/resize,m_lfit,h_350,w_350/quality,q_60",
+        "price": "2500",
+        "rebate": "30"
+      }
+    ]
+  }
+]

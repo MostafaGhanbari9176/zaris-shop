@@ -12,14 +12,25 @@ import com.android.volley.*
 import com.android.volley.Response.success
 import com.android.volley.NetworkResponse
 import com.android.volley.RequestQueue
+import com.woocommerse.OAuth1.services.TimestampServiceImpl
 import ir.pepotect.app.zarisshop.model.localData.Pref
 import ir.pepotect.app.zarisshop.model.uses.VolleyMultipartRequest
 import ir.pepotect.app.zarisshop.ui.App
+import com.woocommerse.OAuth1.services.HMACSha1SignatureService
+import java.io.UnsupportedEncodingException
+import java.net.URLEncoder
 
 
 class ApiClient(private val listener: ServerData? = null, private val dataCaching: Boolean = true) {
 
     private var cachedData = false
+
+
+    private val nonce = TimestampServiceImpl().nonce
+    private val timestamp = TimestampServiceImpl().timestampInSeconds
+    private val COSTUMER_KEY = "ck_6cd4511bfaa0ab521c379778849f81979b25d485"
+    private val COSTUMER_SECRET = "cs_944fdcb024a180c42f4d9c459533e251dcf49c7f"
+
 
     interface ServerData {
         fun jsonObjectResponse(data: JSONObject?) {}
@@ -93,12 +104,16 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
     }
 
     fun getJsonArray(url: String, authentication: Boolean, tag: String = "main") {
-        val request = object : JsonArrayRequest(Request.Method.GET, if(url.contains("http", true)) url else App.baseUrl + url, null,
+        val resultUrl = generateUrl(App.baseUrl+url, "GET")
+
+        val request = object : JsonArrayRequest(Request.Method.GET,
+            if (url.contains("http", true)) url else resultUrl,
+            null,
             { response ->
                 listener?.jsonArrayResponse(response)
             },
             { error ->
-                if (error.message?.contains("Unable to resolve host") == true && !cachedData) {
+                if (!(error.message?.contains("Unable to resolve host") == true && cachedData)) {
                     listener?.errorInf(
                         error.networkResponse?.statusCode.toString()
                             ?: "", error.networkResponse?.data.toString() ?: ""
@@ -109,7 +124,7 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
             override fun getHeaders(): MutableMap<String, String> =
                 mutableMapOf<String, String>().apply {
                     put("Content-Type", "application/json")
-                    if (authentication)
+                    if (false)
                         put("Authorization", "token " + Hawk.get(Pref.authenticationToken, ""))
                 }
 
@@ -128,6 +143,7 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
                     cachedData = false
 
             }
+
 
         }
         if (!dataCaching)
@@ -239,7 +255,7 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
     }
 
     fun putMultipart(url: String, data: ByteArray?, tag: String = "main") {
-        val request = object : VolleyMultipartRequest(Method.PUT,App.baseUrl + url,
+        val request = object : VolleyMultipartRequest(Method.PUT, App.baseUrl + url,
             { response ->
                 try {
                     listener?.jsonObjectResponse(JSONObject(response.data.toString()))
@@ -256,7 +272,7 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
             }) {
             override fun getHeaders(): MutableMap<String, String> = mutableMapOf<String, String>()
                 .apply {
-                   // put("Content-Type", "application/json")
+                    // put("Content-Type", "application/json")
                     put("Authorization", "token " + Hawk.get(Pref.authenticationToken, ""))
                 }
 
@@ -265,7 +281,8 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
                     put("avatar", DataPart("avatar.png", data))
                 }
         }
-        request.retryPolicy = DefaultRetryPolicy(2000000, 1, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT)
+        request.retryPolicy =
+            DefaultRetryPolicy(2000000, 1, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT)
         queue?.add(request)
     }
 
@@ -304,6 +321,31 @@ class ApiClient(private val listener: ServerData? = null, private val dataCachin
             Charset.forName("UTF-8")
         )
         return CacheModel(cacheEntry, jsonString)
+    }
+
+    private fun generateUrl(baseUrl: String, methode:String): String {
+        val firstEncodedString = methode + "&" + encodeUrl(baseUrl)
+        val parameterString =
+            "oauth_consumer_key=$COSTUMER_KEY&oauth_nonce=$nonce&oauth_signature_method=HMAC-SHA1&oauth_timestamp=$timestamp&oauth_version=1.0"
+        val secoundEncodedString = "&" + encodeUrl(parameterString)
+        val baseString = firstEncodedString + secoundEncodedString
+        var signature = HMACSha1SignatureService().getSignature(baseString, COSTUMER_SECRET, "")
+        signature=encodeUrl(signature)
+
+        return baseUrl + "oauth_signature_method=HMAC-SHA1&oauth_consumer_key=" + COSTUMER_KEY + "&oauth_version=1.0&oauth_timestamp=" + timestamp + "&oauth_nonce=" + nonce + "&oauth_signature=" + signature
+    }
+
+    private fun encodeUrl(url: String): String {
+        var encodedurl = ""
+        try {
+
+            encodedurl = URLEncoder.encode(url, "UTF-8")
+
+        } catch (e: UnsupportedEncodingException) {
+            e.printStackTrace()
+        }
+
+        return encodedurl
     }
 
 }

@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import ir.pepotect.app.zarisshop.R
 import ir.pepotect.app.zarisshop.model.dataModel.OrderProduct
-import ir.pepotect.app.zarisshop.presenter.CartPresenter
+import ir.pepotect.app.zarisshop.presenter.OrderPresenter
 import ir.pepotect.app.zarisshop.ui.uses.MyFragment
 import ir.pepotect.app.zarisshop.ui.uses.dialog.DialogProgress
 import ir.pepotect.app.zarisshop.ui.uses.loadImage
@@ -37,7 +37,7 @@ class FragmentOrder:MyFragment() {
 
     private fun getOrder() {
         progress.show()
-        CartPresenter(object:CartPresenter.Result{
+        OrderPresenter(object:OrderPresenter.Result{
             override fun order(ok: Boolean, message: String, data: ArrayList<OrderProduct>?) {
                 progress.cancel()
                 if(ok)

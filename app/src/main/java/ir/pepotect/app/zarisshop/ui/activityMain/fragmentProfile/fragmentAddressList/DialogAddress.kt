@@ -5,12 +5,10 @@ import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
 import android.graphics.Point
-import android.graphics.drawable.AnimatedVectorDrawable
 import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import android.view.LayoutInflater
 import android.widget.RelativeLayout
-import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import ir.pepotect.app.zarisshop.R
 import ir.pepotect.app.zarisshop.ui.App
 
